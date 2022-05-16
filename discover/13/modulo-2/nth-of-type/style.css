@@ -1,0 +1,15 @@
+*{margin: 0;}
+
+ul li {
+    font-size: 20px;
+    margin: 0;
+}
+
+ul li:nth-child(even) {
+    background-color: gray;
+    color: red;
+}
+ul li:nth-child(odd) {
+    background-color:aqua;
+    color: black;
+}

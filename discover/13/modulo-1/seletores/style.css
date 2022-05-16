@@ -1,0 +1,28 @@
+/* h1{
+    color:blue;
+}
+p{
+    color:green;
+}
+#content{
+    color:orange;
+}
+
+#title{
+    color:yellow;
+}
+.red{
+    color:red;
+}
+.big{
+    font-size: 3em;
+} */
+
+[title] {
+    color: orange;;
+}
+
+p:hover, h1:hover {
+    color:red;
+}
+ 

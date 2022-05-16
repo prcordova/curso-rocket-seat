@@ -1,0 +1,16 @@
+li {
+    position: relative;
+    
+}
+
+li::before{
+    
+    content: "";
+    width: 2px;
+    height: 90%;
+    color:red;
+    background-color:blue;
+    position: absolute;
+    bottom: 0px;
+    
+}

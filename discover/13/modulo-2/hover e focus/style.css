@@ -1,0 +1,19 @@
+ 
+ a:hover{
+     color:gray;
+ }
+ input{
+     margin-left: 20px;
+     border: none;
+     border-bottom: 1px solid black;
+ }
+ input:focus {
+     
+     border: none;
+     border-bottom: 1px solid black;
+     outline: none;
+      
+ }
+ input:required{
+     border-bottom:1px solid red;
+ }
