@@ -25,20 +25,22 @@ export function Home() {
 
   useEffect(() => {
     async function fetchData() {
-
       const response = await fetch('https://api.github.com/users/prcordova');
       const data = await response.json();
+      console.log( data.name)
       setUser({
+        id:  data.id,
         name: data.name,
-        avatar: data.avatar_url,
+        avatar: data.avatar_url
       });
     }
+    fetchData()
   
     
   }, [students])
 
+  
   return (
-
     <div className="container">
       <header>
         <h1>Lista de presença</h1>
@@ -61,7 +63,7 @@ export function Home() {
         students.map(student => (
 
           <Card
-            key={student.time.second}
+            key={student.time}
             name={student.name}
             time={student.time} />
         ))
